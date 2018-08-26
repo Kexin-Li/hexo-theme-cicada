@@ -1,0 +1,5 @@
+<nav id="menu">
+  <% for (let i in theme.menu) { %>
+    <a href="<%- url_for(theme.menu[i]) %>"><%= __('menu.' + i) %></a>
+  <% } %>
+</nav>

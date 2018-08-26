@@ -1,0 +1,23 @@
+<% if (item.link || item.title) { %>
+  <% if (item.link) { %>
+  <h1 class="post-title">
+    <a href="<%- url_for(item.link) %>" target="_blank">
+      <%= item.title %>
+    </a>
+  </h1>
+  <% } else if (item.title) { %>
+    <h1 class="post-title">
+      <a href="<%- config.root %><%- item.path %>">
+        <%= item.title %>
+      </a>
+    </h1>
+  <% } else { %>
+  <h1 class="post-title">
+    <%= item.title %>
+  </h1>
+  <% } %>
+<% } else { %>
+  <h1 class="post-title">
+    Untitled
+  </h1>
+<% } %>

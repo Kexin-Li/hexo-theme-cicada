@@ -1,0 +1,53 @@
+<div class="blog-post">
+  <div class="post-img" style="background-image: url(<%- url_for(item.cover) %>)">
+  </div>
+
+  <div class="post-content">
+    <div class="post-header">
+      <% if (is_home() || is_category() || is_tag()) { %>
+        <%- partial('post/meta-excerpt') %>
+      <% } else { %>
+        <%- partial('post/meta-full') %>
+      <% } %>
+    </div>
+    <div class="post-detail">
+      <% if (is_home() && item.excerpt) { %>
+        <div class="detail-excerpt">
+          <%- item.excerpt %>
+          <p id="excerpt">
+            <a href="<%- config.root %><%- item.path %>" class="blog-post-link">
+              <%= __('posts.read_more') %>
+            </a>
+          </p>
+          <hr>
+        </div>
+        <!-- TODO: show date and author -->
+        <!-- <p id="date"><%= date(item.date, 'YYYY-MM-DD') %></p> -->
+      <% } else if ((is_category() || is_tag()) && item.excerpt) { %>
+        <%- item.excerpt %>
+        <p id="excerpt">
+          <a href="<%- config.root %><%- item.path %>" class="blog-post-link">
+            <%= __('posts.read_more') %>
+          </a>
+        </p>
+        <hr>
+        <!-- <p id="date"><%= date(item.date, 'YYYY-MM-DD') %></p> -->
+      <% } else { %>
+        <%- item.content %>
+        <hr>
+      <% } %>
+    </div>
+
+    <% if (!is_home() && !is_category() && !is_tag()) { %>
+      <% if (theme.copyright.enable) { %>
+        <%- partial('post/copyright') %>
+      <% } %>
+    <% } %>
+
+    <% if (!is_home() && !is_category() && !is_tag()) { %>
+      <%- partial('post/article-tags') %>
+      <%- partial('post/turing') %>
+      <%- partial('comments') %>
+    <% } %> 
+  </div>
+</div>

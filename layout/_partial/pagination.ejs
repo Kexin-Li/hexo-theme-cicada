@@ -1,0 +1,8 @@
+<nav class="blog-pager">
+  <% if (page.prev) { %>
+    <a class="prev" href="<%- config.root %><%- page.prev_link %>"><i class="fas fa-angle-left"></i><%= __('posts.prev') %></a>
+  <% } %>
+  <% if (page.next) { %>
+    <a class="next" href="<%- config.root %><%- page.next_link %>"><%= __('posts.next') %><i class="fas fa-angle-right"></i></a>
+  <% } %>
+</nav>

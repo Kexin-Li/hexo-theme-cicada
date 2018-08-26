@@ -1,0 +1,13 @@
+<script type="text/javascript" src="<%- url_for('lib/jquery/jquery.min.js') %>"></script>
+
+<% if (theme.fancybox) { %>
+  <script type="text/javascript" src="<%- url_for('lib/fancybox/jquery.fancybox.pack.js') %>"></script>
+<% } %>
+
+<!-- <% if (theme.mathjax) { %>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<% } %> -->
+
+<%- partial('plugins/plugins') %>
+
+<script type="text/javascript" src="<%- url_for('js/cicada.js') %>"></script>

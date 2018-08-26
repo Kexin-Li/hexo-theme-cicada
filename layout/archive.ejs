@@ -1,0 +1,28 @@
+<div class="blog-archive">
+  <% const groups = {};
+  const years = [];
+  page.posts.each(post => {
+      const year = post.date.year();
+      if (typeof(groups[year]) === 'undefined') {
+          groups[year] = [];
+          years.push(year);
+      }
+      groups[year].push(post);
+  });
+  years.sort((a, b) => b - a); %>
+  <% for (let year of years) { %>
+    <div class="archive-year">
+      <h2 class="archive-title"><i class="fas fa-archive"></i><%= year %></h2>
+      <div class="articles">
+      <% for (let post of groups[year].sort((a, b) => b.date.diff(a.date))) { %>
+        <div class="articles-content">
+            <time class="is-text-small" datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date, "MM-DD") %></time>
+            <a href="<%= url_for(post.link ? post.link : post.path) %>"><%= post.title %></a>
+        </div>
+        <hr>
+      <% } %>
+      </div>
+    </div>
+  <% } %>
+  <%- partial('_partial/pagination') %>
+</section>

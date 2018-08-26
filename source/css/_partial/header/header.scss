@@ -1,0 +1,52 @@
+//======================
+//       Header        
+//======================
+
+.blog-header {
+  margin: 0;
+  padding: 0;
+  ul {
+    padding: 0 15px;
+    list-style: none;
+    display: flex;
+    height: 46px;
+    .title {
+      margin-right: auto;
+      a {
+        font-size: 18px;
+      }
+      @include media-query() {
+        margin-left: -15px;
+      }
+    }
+    li {
+      cursor: pointer;
+      a {
+        @include menu(20px);
+      }
+      select {
+        display: block;
+        opacity: 0;
+      }
+      .search {
+        margin-top: 5px;
+      }
+    }
+    @include media-query() {
+      .nav-item {
+        display: none;
+      }
+    }
+  }
+}
+
+.mobile {
+  display: none;
+  position: absolute;
+  top: 21px;
+  right: 20px;
+  cursor: pointer;
+  @include media-query() {
+    display: inline;
+  }
+}

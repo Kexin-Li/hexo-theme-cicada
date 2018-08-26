@@ -1,0 +1,19 @@
+menu:
+  home: Home
+  archives: Archives
+  tags: Tags
+  categories: Categories
+  about: About
+  portfolio: Portfolio
+
+posts:
+  prev: prev
+  next: next
+  prev_post: previous
+  next_post: next
+  read_more: Read More
+
+copyright:
+  author: 'Author'
+  link: 'Link'
+  license: 'License'

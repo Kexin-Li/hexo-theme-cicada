@@ -1,0 +1,21 @@
+#menu {
+  background: #fff;
+  text-align: center;
+  position: fixed;
+  top: 45;
+  right: 45;
+  z-index: 0;
+  width: 256px;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+  box-shadow: 0px 10px 50px rgba(210, 190, 171, 0.2);
+
+  transition: transform 500ms ease-out;
+  a {
+    &:hover, &:active {
+      @extend %a-hover;
+    }
+    @include menu(10px);
+  }
+}

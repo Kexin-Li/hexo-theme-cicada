@@ -1,0 +1,14 @@
+<div class="post-more">
+  <% if (item.prev) { %>
+    <div class="post-pre">
+      <span><%- __('posts.prev_post') %></span>
+      <a href="<%- url_for(item.prev.path) %>"><%= item.prev.title %></a>
+    </div>
+  <% } %>
+  <% if (item.next) { %>
+  <div class="post-next">
+    <span><%- __('posts.next_post') %></span>
+    <a href="<%- url_for(item.next.path) %>"><%= item.next.title %></a>
+  </div>
+  <% } %>
+</div>

@@ -1,0 +1,13 @@
+<%
+  let categories = [];
+  if (item.categories) {
+    item.categories.forEach(function(category) {
+      categories.push('<a class="meta-category" href="' + config.root + category.path + '">' + category.name + '</a>');
+    });
+  }
+%>
+
+<% if (item.categories && item.categories.length) { %>
+  <span> | </span>
+  <%- categories.join(' · ') %>
+<% } %>

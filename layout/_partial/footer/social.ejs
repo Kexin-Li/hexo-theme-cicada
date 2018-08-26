@@ -1,0 +1,24 @@
+<%
+  let links = {};
+  if (theme.social) {
+    for (let name in theme.social) {
+      if (theme.social[name]) {
+        links[name] = theme.social[name];
+      }
+    }
+  }
+%>
+
+<% if (links) { %>
+  <div class="blog-footer-social">
+    <ul>
+      <% for (let name in links) { %>
+        <% if (name === 'email') { %>
+          <li><a class="iconfont icon-<%= name %>" href="mailto:<%= links[name] %>"></a></li>
+        <% } else { %>
+          <li><a class="iconfont icon-<%= name %>" href="<%= links[name] %>"></a></li>
+        <% } %>
+      <% } %>
+    </ul>
+  </div>
+<% } %> 

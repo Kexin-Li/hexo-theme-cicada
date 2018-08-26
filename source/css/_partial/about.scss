@@ -1,0 +1,25 @@
+//======================
+//       About        
+//======================
+
+
+.blog-about {
+  width: 70%;
+  margin: 50px auto;
+  background-color: #fff;
+  display: grid;
+  @extend %box-shadow;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  .avatar-wrapper {
+    height: 156px;
+    text-align: center;
+  }
+  .avatar {
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+  }
+}

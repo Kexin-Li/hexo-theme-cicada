@@ -1,0 +1,217 @@
+//======================
+//       Post        
+//======================
+
+
+.blog-post {
+  margin-top: 50px;
+  width: 100%;
+  // display: grid;
+  background-color: white;
+  @extend %box-shadow;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  .post-img {
+    background-color: #ccc9b7;
+    height: 256px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include media-query() {
+      height: 200px;
+    }
+  }
+  .post-header {
+    a:hover, &:active {
+      @extend %underline;
+    }
+  }
+}
+
+.post-content {
+  padding: 25px;
+  .post-header {
+    font-weight: 600;
+    .post-title {
+      @include media-query() {
+        font-size: 1.5em;
+      }
+    }
+  }
+  .post-detail {
+    a {
+      @extend %underline;
+      font-weight: bold;
+    }
+    a:hover, &:active {
+      @extend %a-hover;
+    }
+    .video-container {
+      position: relative;
+      padding-top: 25px;
+      padding-bottom: 56.25%;
+      height: 0;
+      iframe {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .post-more {
+    display: flex;
+    text-transform: uppercase;
+    a {
+      font-weight: 600;
+      &:hover, &:active {
+        @extend %a-hover;
+      }
+    }
+    .post-pre {
+      flex: 1;
+      span {
+        @include span(left);
+      }
+    }
+    .post-next {
+      flex: 1;
+      text-align: right;
+      span {
+        @include span(right);
+      }
+    }
+  }
+  .post-tags {
+    a {
+      margin: 0 0.15rem;
+      padding: 0.15rem 0.3rem;
+      border: 1px solid #ccc;
+      color: #ccc;
+    }
+  }
+  .post-comments {
+    margin: 60px 0;
+  }
+  .post-meta {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: left;
+    font-family: Menlo, sans-serif;
+  }
+  @include media-query() {
+    padding: 10px;
+  }
+}
+
+blockquote {
+  font-weight: 600;
+  font-size: 18px;
+  position: relative;
+  padding-left: 45px;
+  padding-top: 5px;
+  margin-bottom: 40px;
+}
+blockquote.left {
+  margin-left: 0.5em;
+  margin-right: 1em;
+  float: left;
+}
+blockquote.right {
+  margin-left: 0.5em;
+  margin-right: 1em;
+  float: right;
+}
+blockquote::before {
+  content: ' ';
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  width: 1.5rem;
+  height: 1.5rem;
+  opacity: 0.1;
+  background: url('../assets/quote-left.svg') 0 0/1.5rem 1.5rem no-repeat;
+}
+blockquote p::after {
+  content: ' ';
+  position: absolute;
+  margin: 0 5px;
+  width: 2rem;
+  height: 2rem;
+  opacity: 0.1;
+  background: url('../assets/quote-right.svg') 0 0/1rem 1rem no-repeat;
+}
+blockquote footer {
+  font-weight: 400;
+  font-size: 14px;
+  overflow-x: auto;
+}
+
+code {
+  background-color: #E5EFFB;
+  padding: 2px 4px;
+  font-family: Menlo, sans-serif;
+  font-size: 14px;
+  color: #2476d4;
+}
+figure.highlight {
+  padding: 0;
+  width: 100%;
+  margin: 0 0 1.5rem;
+  background-color: #fffaea;
+  color: #596E74;
+  border: 1px solid #e7dec3;
+  overflow-x: auto;
+  table {
+    width: auto;
+    border: none;
+    text-align: left;
+    tr {
+      border: none;
+      background-color: #fffaea;
+      td {
+        border: none;
+        padding: 0;
+        text-align: left;
+      }
+    }
+  }
+  pre {
+    overflow: auto;
+    font-size: 14px;
+    padding: 5px 0px;
+    font-family: Menlo, sans-serif;
+    .line {
+      line-height: 1.58rem;
+      padding: 0px 10px;
+    }
+  }
+  figcaption, .gutter {
+    display: none;
+  }
+}
+
+table {
+  width: 100%;
+  tr:nth-of-type(odd) {
+    background: #fcf8ef;
+  }
+  th {
+    background: #faeed2;
+  }
+  td, th {
+    padding: 6px; 
+    text-align: center; 
+    border: 1px solid rgba(0, 0, 0, 0.07);
+  }
+}
+
+.detail-excerpt {
+  @include media-query() {
+    display: none;
+  }
+}

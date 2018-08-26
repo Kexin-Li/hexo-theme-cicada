@@ -1,0 +1,51 @@
+<%
+  let height;
+  let subtitle;
+
+  if (is_archive()) {
+    subtitle = 'Archives';
+    height = 256;
+  } else if (page.layout === 'categories') {
+    subtitle = 'Categories';
+    height = 256;
+  } else if (page.layout === 'tags') {
+    subtitle = 'Tags';
+    height = 256;
+  } else if (page.layout === 'portfolio') {
+    subtitle = theme.portfolio.subtitle || config.subtitle;
+  } else if (page.layout === 'page') {
+    subtitle = theme.about.subtitle || config.subtitle;
+  } else if (is_category()) {
+    subtitle = 'CATEGORY: ' + page.category;
+  } else if (is_tag()) {
+    subtitle = 'TAG: ' + page.tag;
+  } else {
+    subtitle = config.subtitle;
+  }
+%>
+
+<div class="blog-slide" style="height: <%= height %>px">
+  <nav class="blog-header">
+    <a class="mobile toggle-button"><i class="fas fa-bars fa-lg"></i></a>
+    <ul>
+      <li class="title"><a href="/"><%= config.title %></a></li>
+      <% for (let i in theme.menu) { %>
+        <li class="nav-item"><a href="<%- url_for(theme.menu[i]) %>"><%= __('menu.' + i) %></a></li>
+      <% } %>
+      <% if (theme.local_search) { %>
+        <li class="search"><a href="/"><i class="fas fa-search"></i></a></li>
+      <% } %>
+      <!-- TODO: V1.1 multi language -->
+      <!-- <li>
+        <label id="lang-select-label" for="lang-select">
+          <span>简体中文</span>
+        </label>
+        <select id="lang-select">
+          <option value="en">English</option>
+          <option value="zh-cn">简体中文</option>
+        </select>
+      </li> -->
+    </ul>
+  </nav>
+  <div class="subtitle"><h1><%= subtitle %></h1></div>
+</div>

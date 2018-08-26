@@ -1,0 +1,10 @@
+<%- partial('title') %>
+<div class="post-meta">
+  <%= date(item.date, 'YYYY-MM-DD') %>
+  <% if(item.author) { %>
+    / by <%- item.author %>
+  <% } %>
+  <% if (theme.show_category) { %>
+    <%- partial('article-categories') %>
+  <% } %>
+</div>

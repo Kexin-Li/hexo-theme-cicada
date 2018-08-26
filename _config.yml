@@ -1,0 +1,122 @@
+#======================
+#       Favicon        
+#======================
+favicon: /images/favicon.ico
+
+
+#======================
+#       Menu        
+#======================
+menu:
+  home: /
+  archives: /archives
+  portfolio: /portfolio
+  about: /about
+  # categories: /categories
+  # tags: /tags
+
+
+#======================
+#       Personal        
+#======================
+show_tag: true
+show_category: false
+
+
+#======================
+#     Read More     
+#======================
+excerpt_link: Read More
+
+
+#======================
+#      Fancybox     
+#======================
+fancybox: true
+
+
+#======================
+#      Comment    
+#======================
+disqus_shortname: Shingooo
+
+
+#======================
+#      Social    
+#======================
+social: 
+  email: hollalikexin@gmail.com
+  instagram: https://www.instagram.com/hollalikexin/
+  douban: 
+  linkedin: 
+  weibo: 
+  stackoverflow: https://stackoverflow.com/users/6737259/kexin-li
+  facebook: 
+  twitter: 
+  github: https://github.com/Kexin-Li
+  rss: 
+  google: 
+  zhihu: 
+  pocket: 
+
+
+#======================
+#   Google Analytics    
+#======================
+google_analytics: UA-124632979-1
+
+
+#======================
+#      Portfolio        
+#======================
+portfolio:
+  subtitle: Some Works
+
+#======================
+#      About        
+#======================
+about:
+  avatar: 
+  subtitle: About Me
+
+
+
+
+#=============================================================================
+#               !!! TO-DO !!! Please Don't fill down below
+#=============================================================================
+
+
+#======================
+#    Search(TO-DO)    
+#======================
+local_search: false
+## Add below to ../../_config.yml
+# search: 
+#   path: search.xml
+#   field: post
+#   format: html
+#   limit: 10000
+
+
+#======================
+#   Copyright(TO-DO)   
+#======================
+# https://creativecommons.org/ 
+copyright:
+  enable: false
+  license: '<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>'
+
+
+#======================
+#   LeanCloud(TO-DO)    
+#======================
+leancloud:
+  app_id: 
+  app_key: 
+
+
+#======================
+#   Mathjax(TO-DO)
+#======================
+mathjax: false
