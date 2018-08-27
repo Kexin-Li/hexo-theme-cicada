@@ -19,10 +19,10 @@
       this.statistic();
     }
     this.backToTop();
-    this.addHashTag();
     this.popupMenu();
     this.highlight();
     // this.tagCount();
+    // this.addHashTag();  // its ugly
   };
 
 
