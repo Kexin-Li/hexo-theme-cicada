@@ -6,7 +6,6 @@
 .blog-post {
   margin-top: 50px;
   width: 100%;
-  // display: grid;
   background-color: white;
   @extend %box-shadow;
   -webkit-font-smoothing: antialiased;
@@ -25,7 +24,7 @@
     }
   }
   .post-header {
-    a:hover, &:active {
+    a:hover {
       @extend %underline;
     }
   }
@@ -46,7 +45,7 @@
       @extend %underline;
       font-weight: bold;
     }
-    a:hover, &:active {
+    a:hover {
       @extend %a-hover;
     }
     .video-container {
@@ -68,7 +67,7 @@
     text-transform: uppercase;
     a {
       font-weight: 600;
-      &:hover, &:active {
+      &:hover {
         @extend %a-hover;
       }
     }
