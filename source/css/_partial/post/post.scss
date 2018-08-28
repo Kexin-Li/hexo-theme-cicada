@@ -97,10 +97,10 @@
     margin: 60px 0;
   }
   .post-meta {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 14px;
     text-align: left;
-    font-family: Menlo, sans-serif;
+    font-family: "Songti SC", Georgia, Menlo, serif;
   }
   @include media-query() {
     padding: 10px;
@@ -153,6 +153,7 @@
 blockquote {
   font-family: Georgia, "Songti SC", serif;
   font-style: italic;
+  color: rgba(73, 80, 88, 0.7);
   border-left: 4px solid #75abea;
   margin: 1.5em 0px;
   padding: 0.5em 10px;
