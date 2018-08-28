@@ -24,6 +24,9 @@
     }
   }
   .post-header {
+    .post-title {
+      margin-bottom: 10px;
+    }
     a:hover {
       @extend %underline;
     }
@@ -101,6 +104,7 @@
     font-size: 14px;
     text-align: left;
     font-family: "Songti SC", Georgia, Menlo, serif;
+    margin-bottom: 2em;
   }
   @include media-query() {
     padding: 10px;

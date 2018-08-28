@@ -31,7 +31,6 @@
           </a>
         </p>
         <hr>
-        <!-- <p id="date"><%= date(item.date, 'YYYY-MM-DD') %></p> -->
       <% } else { %>
         <%- item.content %>
         <hr>
@@ -39,7 +38,7 @@
     </div>
 
     <% if (!is_home() && !is_category() && !is_tag()) { %>
-      <% if (theme.copyright.enable) { %>
+      <% if (theme.copyright) { %>
         <%- partial('post/copyright') %>
       <% } %>
     <% } %>
