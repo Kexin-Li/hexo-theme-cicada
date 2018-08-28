@@ -10,8 +10,8 @@ favicon: /images/favicon.ico
 menu:
   home: /
   archives: /archives
-  portfolio: /portfolio
-  about: /about
+  # portfolio: /portfolio
+  # about: /about
   # categories: /categories
   # tags: /tags
 
@@ -38,22 +38,22 @@ fancybox: true
 #======================
 #      Comment    
 #======================
-disqus_shortname: Shingooo
+disqus_shortname:
 
 
 #======================
 #      Social    
 #======================
 social: 
-  email: hollalikexin@gmail.com
-  instagram: https://www.instagram.com/hollalikexin/
+  email: 
+  instagram: 
   douban: 
   linkedin: 
   weibo: 
-  stackoverflow: https://stackoverflow.com/users/6737259/kexin-li
+  stackoverflow: 
   facebook: 
   twitter: 
-  github: https://github.com/Kexin-Li
+  github: 
   rss: 
   google: 
   zhihu: 
@@ -63,7 +63,7 @@ social:
 #======================
 #   Google Analytics    
 #======================
-google_analytics: UA-124632979-1
+google_analytics: 
 
 
 #======================
@@ -77,7 +77,7 @@ portfolio:
 #======================
 about:
   avatar: 
-  subtitle: Tech Won't Change The World
+  subtitle: About Me
 
 
 
@@ -90,7 +90,7 @@ about:
 #======================
 #    Search(TO-DO)    
 #======================
-local_search: false
+# local_search: false
 ## Add below to ../../_config.yml
 # search: 
 #   path: search.xml
@@ -102,21 +102,19 @@ local_search: false
 #======================
 #   Copyright(TO-DO)   
 #======================
-# https://creativecommons.org/ 
-copyright:
-  enable: false
-  license: '<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>'
+## https://creativecommons.org/ 
+# copyright: 
 
 
 #======================
 #   LeanCloud(TO-DO)    
 #======================
-leancloud:
-  app_id: 
-  app_key: 
+# leancloud:
+#   app_id: 
+#   app_key: 
 
 
 #======================
 #   Mathjax(TO-DO)
 #======================
-mathjax: false
+# mathjax: false
