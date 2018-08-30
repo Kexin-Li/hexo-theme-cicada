@@ -93,10 +93,12 @@
     text-align: center;
     color: #999;
     a {
+      color: #999;
+      font-weight: 400;
       @extend %underline;
-    }
-    a:hover, a:active {
-      @extend %a-hover;
+      &:hover {
+        @extend %a-hover;
+      }
     }
   }
 }

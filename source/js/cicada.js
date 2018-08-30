@@ -15,9 +15,9 @@
     if (theme.fancybox) {
       this.fancybox();
     }
-    if (theme.leancloud.app_id && theme.leancloud.app_key) {
-      this.statistic();
-    }
+    // if (theme.leancloud.app_id && theme.leancloud.app_key) {
+    //   this.statistic();
+    // }
     this.backToTop();
     this.popupMenu();
     this.highlight();
