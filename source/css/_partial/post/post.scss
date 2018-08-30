@@ -47,6 +47,7 @@
     a {
       @extend %underline;
       font-weight: bold;
+      word-wrap: break-word;
     }
     a:hover {
       @extend %a-hover;
@@ -167,7 +168,7 @@ blockquote p {
 }
 
 code {
-  background-color: #E5EFFB;
+  background-color: rgba(58,66,80,.06);
   padding: 2px 4px;
   font-family: Menlo, sans-serif;
   font-size: 14px;
