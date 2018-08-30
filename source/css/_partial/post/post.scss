@@ -212,14 +212,16 @@ figure.highlight {
 
 table {
   width: 100%;
-  tr:nth-of-type(odd) {
+  tr:nth-of-type(even) {
     background: #fcf8ef;
   }
   th {
+    text-transform: uppercase;
     background: #faeed2;
   }
   td, th {
-    padding: 6px; 
+    padding: 6px;
+    font-size: 17px;
     text-align: center; 
     border: 1px solid rgba(0, 0, 0, 0.07);
   }
