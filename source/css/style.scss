@@ -1,7 +1,9 @@
 @import "_variables";
 @import '_common/normalize';
 @import '_common/mixins';
+@import '_common/format';
 @import '_base';
+@import '_partial/pager';
 @import '_partial/header/popup';
 @import '_partial/iconfont';
 @import '_partial/header/header';

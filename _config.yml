@@ -24,6 +24,13 @@ show_category: false
 
 
 #======================
+#    Code Highlight        
+#======================
+## see: https://highlightjs.org/static/demo/
+highlight: atom-one-light
+
+
+#======================
 #     Read More     
 #======================
 excerpt_link: Read More
@@ -32,7 +39,7 @@ excerpt_link: Read More
 #======================
 #      Fancybox     
 #======================
-fancybox: true
+fancybox: false
 
 
 #======================

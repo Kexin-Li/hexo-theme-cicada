@@ -1,0 +1,41 @@
+h1 {
+  letter-spacing: .02em;
+}
+
+h2 {
+  font-size: 1.42em;
+  margin: 1.62em 0 .4em;
+}
+
+h3 {
+  margin: 1.62em 0 .4em;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.12em;
+  hyphens: auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+abbr, acronym {
+  text-decoration: none;
+  @include underline(dashed);
+}
+
+hr {
+  margin: 36px 0;
+  border: 0;
+  border-top: 1px dashed #d8d8d5;
+}
+
+a {
+  color: #495058;
+  text-decoration: none;
+}

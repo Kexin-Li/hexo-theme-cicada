@@ -40,6 +40,21 @@
   }
 }
 
+@mixin a-pager() {
+  text-transform: uppercase;
+  background-color: #BEBBAE;
+  padding: 3px 15px;
+  color: white;
+  @extend %a-blod;
+  &:hover {
+    background-color: #C6C5B9;
+  }
+}
+
+%a-blod {
+  font-weight: bold;
+}
+
 %underline {
   border-bottom:2px rgba(117, 171, 234, 0.7) solid;
 }

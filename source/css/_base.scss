@@ -19,57 +19,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-abbr, acronym {
-  text-decoration: none;
-  @include underline(dashed);
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: auto;
-}
-
-hr {
-  margin: 36px 0;
-  border: 0;
-  border-top: 1px dashed #d8d8d5;
-}
-
-a {
-  font-weight: bold;
-  color: #495058;
-  text-decoration: none;
-}
-
 .blog-main {
   margin: 50px auto;
   max-width: 900px;
-  .blog-pager {
-    margin: 5em 0;
-    a {
-      text-transform: uppercase;
-      background-color: #BEBBAE;
-      padding: 3px 15px;
-      color: white;
-      &:hover, &:active {
-        background-color: #C6C5B9;
-      }
-      .fa-angle-right {
-        margin-left: 5px;
-      }
-      .fa-angle-left {
-        margin-right: 5px;
-      }
-    }
-    .prev {
-      float: left;
-    }
-    .next {
-      float: right;
-    }
-  }
   
   @include media-query() {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));

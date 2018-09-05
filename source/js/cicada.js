@@ -22,7 +22,6 @@
     this.popupMenu();
     this.highlight();
     // this.tagCount();
-    // this.addHashTag();  // its ugly
   };
 
 
@@ -75,22 +74,6 @@
 
 
   /**
-   * Add hashtag after title
-   */
-  Cicada.prototype.addHashTag = function() {
-    let $titles = $('.post-detail h1, h2, h3, h4, h5, h6');
-
-    $titles.each(function() {
-      let link = $(this).find('a');
-      link.html('<i class="fas fa-hashtag"></i>');
-      link.css('color', '#75abea');
-      link.css('margin-left', '5px');
-      $(this).append(link);
-    });
-  }
-
-
-  /**
    * Compute tags FIXME: css not work
    */
   Cicada.prototype.tagCount = function() {
@@ -123,10 +106,10 @@
   Cicada.prototype.highlight = function() {
     $('figure.highlight').addClass('hljs');
     $('figure.highlight .code .line > span').each(function () {
-        const classes = $(this).attr('class').split(' ');
-        if (classes.length === 1) {
-            $(this).addClass('hljs-' + classes[0]);
-        }
+      const classes = $(this).attr('class').split(' ');
+      if (classes.length === 1) {
+          $(this).addClass('hljs-' + classes[0]);
+      }
     });
   }
 
