@@ -71,12 +71,24 @@ google_analytics:
 #======================
 portfolio:
   subtitle: Some Works
+  cards:
+    card1:
+      cover: /images/screenshot.png
+      content: Cicada is a concise and retro Hexo theme.
+      link: https://github.com/Kexin-Li/hexo-theme-cicada
+    card2:
+      cover: /images/screenshot.png
+      content: Cicada is a Hexo theme, it tastes like summer.
+      link: http://kexin-li.github.io
+    card3:
+      cover: /images/screenshot.png
+      content: Cicada is a Hexo theme, it tastes like summer.
+      link: http://kexin-li.github.io
 
 #======================
 #      About        
 #======================
 about:
-  avatar: 
   subtitle: About Me
 
 
