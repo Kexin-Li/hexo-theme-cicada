@@ -167,7 +167,7 @@ Now, open Cicada's source code, edit `themes/cicada/layout/portfolio.ejs`, you c
 </div>
 ```
 
-### Portfolio Page And About Page's subTitle
+### Portfolio Page And About Page's SubTitle
 
 ``` bash
 #======================
@@ -191,3 +191,5 @@ Cicada also support fancybox, google analytics.
 fancybox: true
 google_analytics:
 ```
+
+## Development
