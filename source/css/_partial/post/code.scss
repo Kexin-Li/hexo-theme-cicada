@@ -1,0 +1,43 @@
+code {
+  background-color: rgba(58,66,80,.06);
+  padding: 2px 4px;
+  font-family: Menlo, sans-serif;
+  font-size: 14px;
+  color: #2476d4;
+}
+figure.highlight {
+  padding: 0;
+  width: 100%;
+  margin: 0 0 1.5rem;
+  background-color: #fffaea;
+  color: #596E74;
+  border: 1px solid #e7dec3;
+  overflow-x: auto;
+  table {
+    width: auto;
+    border: none;
+    text-align: left;
+    tr {
+      border: none;
+      background-color: #fffaea;
+      td {
+        border: none;
+        padding: 0;
+        text-align: left;
+      }
+    }
+  }
+  pre {
+    overflow: auto;
+    font-size: 14px;
+    padding: 5px 0px;
+    font-family: Menlo, sans-serif;
+    .line {
+      line-height: 1.58rem;
+      padding: 0px 10px;
+    }
+  }
+  figcaption, .gutter {
+    display: none;
+  }
+}

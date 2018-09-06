@@ -1,0 +1,11 @@
+.post-img {
+  background-color: #ccc9b7;
+  height: 256px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @include media-query() {
+    height: 200px;
+  }
+}

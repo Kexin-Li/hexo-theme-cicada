@@ -1,0 +1,24 @@
+.post-more {
+  display: flex;
+  text-transform: uppercase;
+  a {
+    @extend %a-blod;
+    &:hover {
+      border-bottom: 0;
+      @extend %a-hover;
+    }
+  }
+  .post-pre {
+    flex: 1;
+    span {
+      @include span(left);
+    }
+  }
+  .post-next {
+    flex: 1;
+    text-align: right;
+    span {
+      @include span(right);
+    }
+  }
+}

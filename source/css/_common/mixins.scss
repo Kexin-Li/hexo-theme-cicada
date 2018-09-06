@@ -10,7 +10,7 @@
 }
 
 @mixin underline($prop) {
-  border-bottom:2px rgba(117, 171, 234, 0.7) $prop;
+  border-bottom:2px rgba(117, 171, 234, 1) $prop;
 }
 
 @mixin tags() {
@@ -56,11 +56,14 @@
 }
 
 %underline {
-  border-bottom:2px rgba(117, 171, 234, 0.7) solid;
+  color: #373C43;
+  padding: 1px;
+  border-bottom:1px #BEBBAE solid;
 }
 
 %a-hover {
   color: #5699e6;
+  border-bottom:1px #5699e6 solid;
 }
 
 %box-shadow {

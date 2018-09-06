@@ -1,0 +1,14 @@
+.post-header {
+  a:hover {
+    // @extend %underline;
+    @include underline(solid);
+  }
+}
+
+.post-meta {
+  font-weight: 300;
+  font-size: 14px;
+  text-align: left;
+  font-family: "Songti SC", Georgia, Menlo, serif;
+  margin-bottom: 2em;
+}

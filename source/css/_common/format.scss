@@ -4,16 +4,15 @@ h1 {
 
 h2 {
   font-size: 1.42em;
-  margin: 1.62em 0 .4em;
+  margin: 1.62em 0;
 }
 
 h3 {
-  margin: 1.62em 0 .4em;
+  margin: 1.52em 0;
 }
 
 p {
-  margin-top: 0;
-  margin-bottom: 1.12em;
+  margin-bottom: 1.32em;
   hyphens: auto;
 }
 
@@ -36,6 +35,23 @@ hr {
 }
 
 a {
-  color: #495058;
+  color: $font-color;
   text-decoration: none;
+}
+
+table {
+  width: 100%;
+  tr:nth-of-type(even) {
+    background: #fcf8ef;
+  }
+  th {
+    text-transform: uppercase;
+    background: #faeed2;
+  }
+  td, th {
+    padding: 6px;
+    font-size: 17px;
+    text-align: center; 
+    border: 1px solid rgba(0, 0, 0, 0.07);
+  }
 }
