@@ -1,6 +1,8 @@
 # hexo-theme-cicada
 
-💭 Cicada is a concise and retro theme for Hexo.
+💭 Cicada is a concise and retro theme for Hexo. https://kexin-li.github.io
+
+## Language
 
 English Version | [简体中文](./README_CN.md)
 

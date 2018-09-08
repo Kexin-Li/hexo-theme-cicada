@@ -1,8 +1,10 @@
 # hexo-theme-cicada
 
-💭 Cicada 是一款简洁复古的 Hexo 主题。
+💭 Cicada 是一款简洁复古的 Hexo 主题。https://kexin-li.github.io
 
-[English Version](./README_CN.md) | 简体中文
+## 语言
+
+[English Version](./README.md) | 简体中文
 
 ## 预览
 
