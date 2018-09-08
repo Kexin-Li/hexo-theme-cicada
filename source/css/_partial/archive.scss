@@ -20,11 +20,13 @@
       time {
         margin-right: 5px;
       }
-      &:hover, &:active {
+      &:hover {
+        border-bottom: none;
         cursor: pointer;
         @extend %a-hover;
         a {
           @extend %a-hover;
+          border-bottom: none;
         }
       }
     }
