@@ -14,6 +14,9 @@
       margin-right: auto;
       a {
         font-size: 18px;
+        &:hover {
+          border-bottom: none;
+        }
       }
       @include media-query() {
         margin-left: -15px;
@@ -23,6 +26,9 @@
       cursor: pointer;
       a {
         @include menu(20px);
+        &:hover {
+          border-bottom: none;
+        }
       }
       select {
         display: block;
