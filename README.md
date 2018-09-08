@@ -19,7 +19,7 @@ npm install --save hexo-renderer-scss
 git clone https://github.com/Kexin-Li/hexo-theme-cicada themes/cicada
 ```
 
-Finally set theme in hexo root `_config.yml` file:
+Set theme in main hexo root config `_config.yml` file:
 
 ``` bash
 # Extensions
