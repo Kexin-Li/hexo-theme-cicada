@@ -1,6 +1,8 @@
 <div class="blog-post">
-  <div class="post-img" style="background-image: url(<%- url_for(item.cover) %>)">
-  </div>
+  <% if (item.cover) { %>
+    <div class="post-img" style="background-image: url(<%- url_for(item.cover) %>)">
+    </div>
+  <% } %>
 
   <div class="post-content">
     <div class="post-header">
