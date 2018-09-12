@@ -1,5 +1,5 @@
 //======================
-//       Base        
+//       Base
 //======================
 
 
@@ -22,12 +22,15 @@ body {
 .blog-main {
   margin: 50px auto;
   max-width: 900px;
-  
+
   @include media-query() {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
     max-width:         calc(#{$content-width} - (#{$spacing-unit}));
     padding-right: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
+    h1 {
+      font-size: 1.5em;
+    }
   }
 }
 
