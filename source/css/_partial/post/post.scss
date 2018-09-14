@@ -1,5 +1,5 @@
 //======================
-//       Post        
+//       Post
 //======================
 
 @import './turing';
@@ -24,7 +24,7 @@
 .post-content {
   padding: 25px;
   @include media-query() {
-    padding: 15px;
+    padding: 10px;
   }
 }
 

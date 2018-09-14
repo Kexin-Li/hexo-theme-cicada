@@ -9,3 +9,15 @@
     height: 200px;
   }
 }
+
+figure {
+  margin: 1.5em auto 2em auto;
+}
+
+figure figcaption {
+  width: 80%;
+  text-align: center;
+  margin: 10px auto 0 auto;
+  font-size: 0.9em;
+  color: #666;
+}

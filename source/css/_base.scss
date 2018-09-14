@@ -11,8 +11,8 @@ html {
 
 body {
   padding: 0;
-  font-size: 17px;
-  line-height: 1.7em;
+  font-size: 16px;
+  line-height: 1.7;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", sans-serif;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
@@ -26,8 +26,8 @@ body {
   @include media-query() {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
     max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
+    padding-right: $spacing-unit / 2 - 5;
+    padding-left: $spacing-unit / 2 - 5;
     h1 {
       font-size: 1.5em;
     }

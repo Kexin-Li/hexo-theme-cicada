@@ -1,9 +1,9 @@
 code {
-  background-color: rgba(58,66,80,.06);
+  background-color: #f9f2f4;
   padding: 2px 4px;
   font-family: Menlo, sans-serif;
   font-size: 14px;
-  color: #2476d4;
+  color: #c7254e;
 }
 figure.highlight {
   padding: 0;
@@ -30,10 +30,10 @@ figure.highlight {
   pre {
     overflow: auto;
     font-size: 14px;
-    padding: 5px 0px;
-    font-family: Menlo, sans-serif;
+    padding: 3px 0px;
+    font-family: "SF Mono", Menlo, Monaco, "Lucida Console", monospace;
     .line {
-      line-height: 1.58rem;
+      line-height: 1.45em;
       padding: 0px 10px;
     }
   }
