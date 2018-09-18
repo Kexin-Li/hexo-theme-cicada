@@ -1,6 +1,5 @@
 .post-header {
   a:hover {
-    // @extend %underline;
     @include underline(solid);
   }
 }
@@ -16,4 +15,7 @@
   font-family: "Songti SC", Georgia, Menlo, serif;
   margin-bottom: 2em;
   margin-top: -1em;
+  @include media-query() {
+    margin-top: 0;
+  }
 }
