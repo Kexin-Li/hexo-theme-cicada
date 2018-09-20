@@ -1,1 +1,4 @@
 debug.log
+layout/notion.ejs
+source/css/_partial/notion.scss
+source/css/style.scss
