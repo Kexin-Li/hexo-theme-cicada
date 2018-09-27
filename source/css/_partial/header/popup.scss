@@ -13,8 +13,9 @@
 
   transition: transform 500ms ease-out;
   a {
-    &:hover, &:active {
+    &:hover {
       @extend %a-hover;
+      border: none;
     }
     @include menu(10px);
   }
