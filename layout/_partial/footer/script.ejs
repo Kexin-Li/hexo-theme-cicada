@@ -1,7 +1,7 @@
-<script type="text/javascript" src="<%- url_for('lib/jquery/jquery.min.js') %>"></script>
+<script async type="text/javascript" src="<%- url_for('lib/jquery/jquery.min.js') %>"></script>
 
 <% if (theme.fancybox) { %>
-  <script type="text/javascript" src="<%- url_for('lib/fancybox/jquery.fancybox.pack.js') %>"></script>
+  <script async type="text/javascript" src="<%- url_for('lib/fancybox/jquery.fancybox.pack.js') %>"></script>
 <% } %>
 
 <!-- <% if (theme.mathjax) { %>
@@ -10,4 +10,4 @@
 
 <%- partial('plugins/plugins') %>
 
-<script type="text/javascript" src="<%- url_for('js/cicada.js') %>"></script>
+<script async type="text/javascript" src="<%- url_for('js/cicada.js') %>"></script>
