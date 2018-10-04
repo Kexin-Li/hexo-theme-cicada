@@ -39,12 +39,14 @@ excerpt_link: Read More
 #======================
 #      Fancybox     
 #======================
-fancybox: false
+## see: fancybox.net
+fancybox: true
 
 
 #======================
 #      Comment    
 #======================
+## see: https://disqus.com/
 disqus_shortname:
 
 
@@ -70,6 +72,7 @@ social:
 #======================
 #   Google Analytics    
 #======================
+## see:  https://analytics.google.com
 google_analytics: 
 
 
@@ -97,43 +100,3 @@ portfolio:
 #======================
 about:
   subtitle: About Me
-
-
-
-
-#=============================================================================
-#               !!! TO-DO !!! Please Don't fill down below
-#=============================================================================
-
-
-#======================
-#    Search(TO-DO)    
-#======================
-# local_search: false
-## Add below to ../../_config.yml
-# search: 
-#   path: search.xml
-#   field: post
-#   format: html
-#   limit: 10000
-
-
-#======================
-#   Copyright(TO-DO)   
-#======================
-## https://creativecommons.org/ 
-# copyright: 
-
-
-#======================
-#   LeanCloud(TO-DO)    
-#======================
-# leancloud:
-#   app_id: 
-#   app_key: 
-
-
-#======================
-#   Mathjax(TO-DO)
-#======================
-# mathjax: false
