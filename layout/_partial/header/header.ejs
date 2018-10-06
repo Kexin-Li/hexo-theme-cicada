@@ -32,10 +32,7 @@
       <% for (let i in theme.menu) { %>
         <li class="nav-item"><a href="<%- url_for(theme.menu[i]) %>"><%= __('menu.' + i) %></a></li>
       <% } %>
-      <% if (theme.local_search) { %>
-        <li class="search"><a href="/"><i class="fas fa-search"></i></a></li>
-      <% } %>
     </ul>
   </nav>
-  <div class="subtitle"><h1><%= subtitle %></h1></div>
+  <h1 class="subtitle"><%= subtitle %></h1>
 </header>
