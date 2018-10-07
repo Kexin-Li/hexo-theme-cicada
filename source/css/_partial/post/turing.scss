@@ -1,5 +1,6 @@
 .post-more {
   display: flex;
+  justify-content: space-between;
   text-transform: uppercase;
   a {
     @extend %a-blod;
@@ -9,13 +10,11 @@
     }
   }
   .post-pre {
-    flex: 1;
     span {
       @include span(left);
     }
   }
   .post-next {
-    flex: 1;
     text-align: right;
     span {
       @include span(right);
