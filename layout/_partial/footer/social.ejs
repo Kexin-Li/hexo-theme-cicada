@@ -9,7 +9,7 @@
   }
 %>
 
-<% if (links) { %>
+<% if (Object.keys(links).length !== 0) { %>
   <div class="blog-footer-social">
     <ul>
       <% for (let name in links) { %>
