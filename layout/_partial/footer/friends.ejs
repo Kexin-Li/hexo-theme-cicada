@@ -1,0 +1,22 @@
+<%
+  let friends = {};
+  if (theme.friends) {
+    for (let name in theme.friends) {
+      if (theme.friends[name]) {
+        friends[name] = theme.friends[name];
+      }
+    }
+  }
+%>
+
+<% if (friends) { %>
+<hr>
+<div class="blog-footer-friends">
+  <p class="title">FRIENDS</p>
+  <div class="friends">
+  <% for (let name in friends) { %>
+    <a href="<%= url_for(friends[name]) %>"><%= name %></a>
+  <% } %>
+  </div>
+</div>
+<% } %>

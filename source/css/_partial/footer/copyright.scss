@@ -1,0 +1,13 @@
+.blog-footer-copyright {
+  font-size: 14px;
+  text-align: center;
+  color: #999;
+  a {
+    color: #999;
+    font-weight: 400;
+    @extend %underline;
+    &:hover {
+      @extend %a-hover;
+    }
+  }
+}

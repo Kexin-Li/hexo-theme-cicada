@@ -47,25 +47,25 @@ fancybox: true
 #      Comment    
 #======================
 ## see: https://disqus.com/
-disqus_shortname:
+disqus_shortname: 
 
 
 #======================
 #      RSS    
 #======================
-# cicada use `atom.xml`, generator for `hexo-generator-feed`
-## install `hexo-generator-feed` first: https://github.com/hexojs/hexo-generator-feed
-rss: true
+# rss: false | default | your feed link
+##  default: use `atom.xml`, generator for `hexo-generator-feed`
+rss: default
 
 
 #======================
 #      Social    
 #======================
 social: 
-  email: 
-  instagram: 
-  douban: 
-  linkedin: 
+  email: dasd
+  instagram: dasd
+  douban: das
+  linkedin: dsa
   weibo: 
   stackoverflow: 
   facebook: 
@@ -74,6 +74,12 @@ social:
   google: 
   zhihu: 
   pocket: 
+
+#======================
+#      Friends        
+#======================
+friends:
+  ZERO's Blog: https://kexin-li.github.io
 
 
 #======================
@@ -101,6 +107,7 @@ portfolio:
       cover: /images/screenshot.png
       content: Cicada is a Hexo theme, it tastes like summer.
       link: http://kexin-li.github.io
+
 
 #======================
 #      About        

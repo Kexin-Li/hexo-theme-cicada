@@ -1,0 +1,20 @@
+.blog-footer-friends {
+  margin-top: -10px;
+  .title {
+    color: #ccc;
+  }
+  .friends{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  a {
+    margin-right: 0.55em;
+    padding: 0 0.3rem;
+    border: 1px solid #ccc;
+    color: #ccc;
+    &:hover {
+      color: #5699e6;
+      border: 1px solid #5699e6;
+    }
+  }
+}

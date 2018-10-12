@@ -7,9 +7,6 @@
       }
     }
   }
-  if (theme.rss) {
-    links.rss = 'rss';
-  }
 %>
 
 <% if (links) { %>
@@ -18,11 +15,17 @@
       <% for (let name in links) { %>
         <% if (name === 'email') { %>
           <li><a class="iconfont icon-<%= name %>" href="mailto:<%= links[name] %>"></a></li>
-        <% } else if (config.feed && config.feed.path && name === 'rss') { %>
-          <li><a class="iconfont icon-<%= name %>" href="<%- url_for(config.feed.path) %>"></a></li>
         <% } else { %>
           <li><a class="iconfont icon-<%= name %>" href="<%= links[name] %>"></a></li>
         <% } %>
+      <% } %>
+      <% if (config.feed && config.feed.path && theme.rss === 'default') { %>
+        <li><a class="iconfont icon-rss" href="<%- url_for(config.feed.path) %>"></a></li>
+      <% } else if (theme.rss === 'default') { %>
+        <% const path = config.feed.path || 'atom.xml' %>
+        <li><a class="iconfont icon-rss" href="<%- url_for(path) %>"></a></li>
+      <% } else if (theme.rss) { %>
+        <li><a class="iconfont icon-rss" href="<%- url_for(theme.rss) %>"></a></li>
       <% } %>
     </ul>
   </div>
