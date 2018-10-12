@@ -114,3 +114,10 @@ portfolio:
 #======================
 about:
 subtitle: About Me
+
+
+#======================
+#      今日诗词        
+#======================
+## see: https://www.jinrishici.com/
+poem: false
