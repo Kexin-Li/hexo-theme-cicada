@@ -36,6 +36,8 @@ theme: cicada
 - 支持 Fancybox
 - 支持代码高亮
 - 支持 Portfolio 页面
+- 支持友情链接
+- 支持[今日诗词 API](https://www.jinrishici.com/)
 
 更多设置请查看 [配置文档](https://github.com/Kexin-Li/hexo-theme-cicada/wiki)
 

@@ -36,6 +36,8 @@ theme: cicada
 - Fancybox supported
 - Code highlight
 - Portfilo page
+- Friends link
+- jinrishici api
 
 Read [Document](https://github.com/Kexin-Li/hexo-theme-cicada/wiki) for more config information.
 
