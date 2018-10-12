@@ -51,6 +51,14 @@ disqus_shortname:
 
 
 #======================
+#      RSS    
+#======================
+# cicada use `atom.xml`, generator for `hexo-generator-feed`
+## install `hexo-generator-feed` first: https://github.com/hexojs/hexo-generator-feed
+rss: true
+
+
+#======================
 #      Social    
 #======================
 social: 
@@ -63,7 +71,6 @@ social:
   facebook: 
   twitter: 
   github: 
-  rss: 
   google: 
   zhihu: 
   pocket: 
@@ -99,4 +106,4 @@ portfolio:
 #      About        
 #======================
 about:
-  subtitle: About Me
+subtitle: About Me

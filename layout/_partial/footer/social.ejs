@@ -7,6 +7,9 @@
       }
     }
   }
+  if (theme.rss) {
+    links.rss = 'rss';
+  }
 %>
 
 <% if (links) { %>
@@ -15,6 +18,8 @@
       <% for (let name in links) { %>
         <% if (name === 'email') { %>
           <li><a class="iconfont icon-<%= name %>" href="mailto:<%= links[name] %>"></a></li>
+        <% } else if (config.feed && config.feed.path && name === 'rss') { %>
+          <li><a class="iconfont icon-<%= name %>" href="<%- url_for(config.feed.path) %>"></a></li>
         <% } else { %>
           <li><a class="iconfont icon-<%= name %>" href="<%= links[name] %>"></a></li>
         <% } %>
