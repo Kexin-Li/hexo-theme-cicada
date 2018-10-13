@@ -22,7 +22,7 @@
       <% if (config.feed && config.feed.path && theme.rss === 'default') { %>
         <li><a class="iconfont icon-rss" href="<%- url_for(config.feed.path) %>"></a></li>
       <% } else if (theme.rss === 'default') { %>
-        <% const path = config.feed.path || 'atom.xml' %>
+        <% const path = config.feed ? (config.feed.path ? config.feed.path : 'atom.xml') : 'atom.xml' %>
         <li><a class="iconfont icon-rss" href="<%- url_for(path) %>"></a></li>
       <% } else if (theme.rss) { %>
         <li><a class="iconfont icon-rss" href="<%- url_for(theme.rss) %>"></a></li>
