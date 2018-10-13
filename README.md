@@ -37,9 +37,11 @@ theme: cicada
 - Code highlight
 - Portfilo page
 - Friends link
-- jinrishici api
+- [jinrishici](https://www.jinrishici.com/) API
 
 Read [Document](https://github.com/Kexin-Li/hexo-theme-cicada/wiki) for more config information.
+
+[ChangeLog](https://github.com/Kexin-Li/hexo-theme-cicada/wiki/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97)
 
 ## Development
 

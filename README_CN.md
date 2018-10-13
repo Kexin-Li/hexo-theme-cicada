@@ -39,7 +39,9 @@ theme: cicada
 - 支持友情链接
 - 支持[今日诗词 API](https://www.jinrishici.com/)
 
-更多设置请查看 [配置文档](https://github.com/Kexin-Li/hexo-theme-cicada/wiki)
+更多设置请查看 [配置文档](https://github.com/Kexin-Li/hexo-theme-cicada/wiki)。
+
+[更新日志](https://github.com/Kexin-Li/hexo-theme-cicada/wiki/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97)
 
 ## 开发环境
 
